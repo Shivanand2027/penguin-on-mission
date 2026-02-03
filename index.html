@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rose Day Snushi Baby 🌹❤️ - Penguin Love Story</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Heart Rain Container -->
+    <div id="heartRain" class="heart-rain"></div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Scene 1: Mission Start -->
+    <div class="scene active" id="scene1">
+        <div class="content">
+            <img src="penguin on mission.gif" alt="Penguin on mission" class="penguin-img">
+            <h2 class="mission-title">🎯 Mission Code: ROSE_DAY_001</h2>
+            <p class="story-text">Agent Penguin activated.</p>
+            <p class="story-text">Objective: Make Snushi Ji smile 😌</p>
+            <button class="story-btn" onclick="nextScene(2)">Start Mission</button>
+        </div>
+    </div>
+
+    <!-- Scene 2: Overthinking Mode -->
+    <div class="scene" id="scene2">
+        <div class="content">
+            <img src="penguin overthinking.gif" alt="Penguin overthinking" class="penguin-img">
+            <h2>Penguin brain at 3 AM:</h2>
+            <p class="story-text">– Should I give rose? 🌹</p>
+            <p class="story-text">– What if she already has 100?</p>
+            <p class="story-text">– What if mine still wins? 😎</p>
+            <button class="story-btn shake-btn" onclick="nextScene(3)">STOP THINKING</button>
+        </div>
+    </div>
+
+    <!-- Scene 3: Waiting Too Long -->
+    <div class="scene" id="scene3">
+        <div class="content">
+            <img src="penguin wating for love.gif" alt="Penguin waiting" class="penguin-img">
+            <h2>Penguin waiting for the perfect moment…</h2>
+            <p class="story-text">…</p>
+            <p class="story-text">Still waiting…</p>
+            <button class="story-btn slide-in-btn" onclick="nextScene(4)">OK LET'S GO</button>
+        </div>
+    </div>
+
+    <!-- Scene 4: Calling Snushi Baby -->
+    <div class="scene" id="scene4">
+        <div class="content">
+            <img src="pengwin saying come hear.webp" alt="Penguin calling" class="penguin-img">
+            <h2>Snushi Baby 👀</h2>
+            <p class="story-text">Come here…</p>
+            <p class="story-text">Penguin has tea ☕ and feelings ❤️</p>
+            <button class="story-btn pop-btn" onclick="nextScene(5)">I'm here</button>
+        </div>
+    </div>
+
+    <!-- Scene 5: System Error -->
+    <div class="scene" id="scene5">
+        <div class="content">
+            <img src="Pengwin saying temperory out of service.gif" alt="System error" class="penguin-img">
+            <div class="terminal-box">
+                <p class="terminal-text">⚠ Penguin.exe crashed</p>
+                <p class="terminal-text">Reason: because cuteness overloaded</p>
+                <p class="terminal-text">Rebooting emotions<span class="loading-dots">...</span></p>
+            </div>
+            <button class="story-btn" onclick="nextScene(6)">Reboot Penguin</button>
+        </div>
+    </div>
+
+    <!-- Scene 6: Mini Drama -->
+    <div class="scene" id="scene6">
+        <div class="content">
+            <img src="pwngwin crying.webp" alt="Penguin crying" class="penguin-img">
+            <h2>What if she says no?</h2>
+            <p class="story-text">What if she laughs?</p>
+            <p class="story-text">What if penguin trips? 😭</p>
+            <button class="story-btn pulse-btn" onclick="nextScene(7)">Be brave</button>
+        </div>
+    </div>
+
+    <!-- Scene 7: Caring for the Rose -->
+    <div class="scene" id="scene7">
+        <div class="content">
+            <img src="penguin carrying rose.webp" alt="Penguin carrying rose" class="penguin-img">
+            <h2>Penguin carried the rose very carefully…</h2>
+            <p class="story-text">Like a water bottle in exam hall 😌</p>
+            <p class="story-text">Because this rose matters.</p>
+            <button class="story-btn" onclick="nextScene(8)">Give the rose</button>
+        </div>
+    </div>
+
+    <!-- Scene 8: Confidence Unlocked -->
+    <div class="scene" id="scene8">
+        <div class="content">
+            <img src="penguin happy with love.gif" alt="Penguin happy" class="penguin-img">
+            <h2>Smile detected 😍</h2>
+            <p class="story-text">Fear deleted ❌</p>
+            <p class="story-text">Confidence updated ✔</p>
+            <button class="story-btn bounce-btn" onclick="nextScene(9)">Final Step</button>
+        </div>
+    </div>
+
+    <!-- Scene 9: Final Rose Day -->
+    <div class="scene" id="scene9">
+        <div class="content">
+            <img src="pengwin giving rose to hher.gif" alt="Penguin giving rose" class="penguin-img">
+            <h1 class="big-title">Happy Rose Day, Dr.Snushi Baby 🌹❤️</h1>
+            <p class="story-text-small">This rose comes with effort, care,</p>
+            <p class="story-text-small">and a penguin who tried.</p>
+            <button class="story-btn" onclick="nextScene(10)">Continue</button>
+        </div>
+    </div>
+
+    <!-- Scene 10: YES/NO Interaction -->
+    <div class="scene" id="scene10">
+        <div class="content">
+            <h2 class="question">Do you accept this rose?</h2>
+            <div class="choice-container">
+                <button class="choice-btn yes-btn" onclick="acceptRose()">YES 💖</button>
+                <button class="choice-btn no-btn" id="noBtn" onmouseover="escapeButton()" onclick="tryClickNo()">NO 🙄</button>
+            </div>
+            <p class="troll-text" id="trollText"></p>
+        </div>
+    </div>
+
+    <!-- Scene 11: Acceptance Celebration -->
+    <div class="scene" id="scene11">
+        <div class="content celebration">
+            <h1 class="celebration-title">🎉 Penguin happiness level: MAX ❤️</h1>
+            <p class="secret-message">Jokes aside…</p>
+            <p class="secret-message">I made this because you matter.</p>
+            <p class="secret-message final-message">Happy Rose Day, Snushi Baby 🌹❤️</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
