@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const penguinImages = document.querySelectorAll('.penguin-img');
     const jokes = [
         "Penguin says: I'm not short, I'm fun-sized! 🐧",
-        "Penguin says: Ashu is my favorite person 💖",
+        "Penguin says: Snushi is my favorite person 💖",
         "Penguin says: This rose took 3 business days to prepare 🌹",
         "Penguin says: I practiced this 47 times 😌",
         "Penguin says: My heart goes brrr when you smile 💓",
